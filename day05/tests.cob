@@ -10,6 +10,7 @@
        01  pPowerIt pic s9(9) value 4.
        01  nbPowerRec pic s9(9) value 4.
        01  pPowerRec pic s9(9) value -5.
+       01  nbToSquareRoot pic s9(9) value 1.
 
        procedure division.
        display "myComputeFactorialIt " factIt.
@@ -26,6 +27,10 @@
 
        display "myComputePowerRec " nbPowerRec " " pPowerRec.
        call "myComputePowerRec" using nbPowerRec pPowerRec.
+       display return-code.
+
+       display "myComputeSquareRoot " nbToSquareRoot.
+       call "myComputeSquareRoot" using nbToSquareRoot.
        display return-code.
 
        stop run.
