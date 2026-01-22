@@ -11,6 +11,7 @@
        01  nbPowerRec pic s9(9) value 4.
        01  pPowerRec pic s9(9) value -5.
        01  nbToSquareRoot pic s9(9) value 1.
+       01  nbIsPrime pic s9(9) value 3.
 
        procedure division.
        display "myComputeFactorialIt " factIt.
@@ -31,6 +32,10 @@
 
        display "myComputeSquareRoot " nbToSquareRoot.
        call "myComputeSquareRoot" using nbToSquareRoot.
+       display return-code.
+
+       display "myIsPrime " nbIsPrime.
+       call "myIsPrime" using nbIsPrime.
        display return-code.
 
        stop run.
