@@ -11,4 +11,4 @@ SRC=(
 
 MAIN=tests.cob
 
-cobc $@ -x $MAIN ${SRC[@]}
+cobc $@ -x ${0%/*}/$MAIN "${SRC[@]/#/${0%/*}/}"
