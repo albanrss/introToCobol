@@ -9,6 +9,7 @@
        01  nCpySrc pic x(5) value "Hello".
        01  nCpyDest pic x(10).
        01  nCpy pic 9(9) value 10.
+       01  strToRev pic x(5) value "Hello".
 
        procedure division.
        display "myStrCpy " cpySrc.
@@ -18,5 +19,9 @@
        display "myStrNCpy " nCpySrc " " nCpy.
        call "myStrNCpy" using nCpyDest nCpySrc nCpy.
        display "cpy = " nCpyDest.
+
+       display "myRevStr " strToRev.
+       call "myRevStr" using strToRev.
+       display strToRev.
 
        stop run.
