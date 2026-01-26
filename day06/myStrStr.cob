@@ -22,6 +22,7 @@
        perform varying idx from 1 until idx > lim
            if hayStack(idx:lenNeedle) = needle
                move idx to return-code
+               exit perform
            end-if
        end-perform.
 
