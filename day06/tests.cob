@@ -10,6 +10,9 @@
        01  nCpyDest pic x(10).
        01  nCpy pic 9(9) value 10.
        01  strToRev pic x(5) value "Hello".
+       01  haystack pic x(11) value "Hello World".
+       01  needle pic x(5) value "World".
+
 
        procedure division.
        display "myStrCpy " cpySrc.
@@ -23,5 +26,9 @@
        display "myRevStr " strToRev.
        call "myRevStr" using strToRev.
        display strToRev.
+
+       display "myStrStr " haystack " " needle.
+       call "myStrStr" using haystack needle.
+       display return-code.
 
        stop run.

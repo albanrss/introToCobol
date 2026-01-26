@@ -2,6 +2,7 @@ SRC=(
     myStrCpy.cob
     myStrNCpy.cob
     myRevStr.cob
+    myStrStr.cob
 )
 
 MAIN=tests.cob
