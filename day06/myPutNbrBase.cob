@@ -19,10 +19,16 @@
 
 
        procedure division using nbr base.
+
+       if nbr = 0
+           display "0"
+           go to endProgram
+       end-if.
+
        move function length(base) to lenBase.
-       move nbr to tmp.
 
        move 0 to bufLen.
+       move nbr to tmp.
        perform until tmp = 0
            divide tmp by lenBase giving tmp
            add 1 to bufLen
@@ -38,5 +44,7 @@
        end-perform.
 
        display " ".
+
+       endProgram.
 
        end program myPutNbrBase.
