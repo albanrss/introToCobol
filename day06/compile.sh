@@ -12,6 +12,7 @@ SRC=(
     myStrIsNum.cob
     myStrIsLower.cob
     myStrIsUpper.cob
+    myStrIsPrintable.cob
 )
 
 MAIN=tests.cob

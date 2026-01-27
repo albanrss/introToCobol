@@ -23,8 +23,9 @@
            "hey, how are you? 42WORds forty-two; fifty+one".
        01  isStrAlpha      pic x(50) value "yo-la team".
        01  isStrNum        pic x(2) value "09".
-       01  isStrLower        pic x(50) value "loWer".
-       01  isStrUpper        pic x(50) value "UPPEr".
+       01  isStrLower      pic x(50) value "loWer".
+       01  isStrUpper      pic x(50) value "UPPEr".
+       01  isStrPrintable  pic x(1) value X'20'.
 
 
        procedure division.
@@ -78,6 +79,10 @@
 
        display "myStrIsUpper " isStrUpper.
        call "myStrIsUpper" using isStrUpper.
+       display return-code.
+
+       display "myStrIsPrintable '" isStrPrintable "'".
+       call "myStrIsPrintable" using isStrPrintable.
        display return-code.
 
        stop run.
