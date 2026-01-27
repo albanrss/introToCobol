@@ -21,6 +21,7 @@
        01  strToLowCase    pic x(20) value "Hello-la Team".
        01  strToCapitalize pic x(50) value
            "hey, how are you? 42WORds forty-two; fifty+one".
+       01  isStrAlpha      pic x(50) value "yo-la team".
 
 
        procedure division.
@@ -59,5 +60,9 @@
        display "myStrCapitalize " strToCapitalize.
        call "myStrCapitalize" using strToCapitalize.
        display strToCapitalize.
+
+       display "myStrIsAlpha " isStrAlpha.
+       call "myStrIsAlpha" using isStrAlpha.
+       display return-code.
 
        stop run.

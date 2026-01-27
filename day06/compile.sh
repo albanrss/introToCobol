@@ -8,6 +8,7 @@ SRC=(
     myStrUpCase.cob
     myStrLowCase.cob
     myStrCapitalize.cob
+    myStrIsAlpha.cob
 )
 
 MAIN=tests.cob
