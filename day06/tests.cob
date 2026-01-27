@@ -26,6 +26,8 @@
        01  isStrLower      pic x(50) value "loWer".
        01  isStrUpper      pic x(50) value "UPPEr".
        01  isStrPrintable  pic x(1) value X'20'.
+       01  nbrToPut        pic 9(9) value 45.
+       01  baseToPut       pic x(16) value "0123456789ABCDEF".
 
 
        procedure division.
@@ -84,5 +86,8 @@
        display "myStrIsPrintable '" isStrPrintable "'".
        call "myStrIsPrintable" using isStrPrintable.
        display return-code.
+
+       display "myPutNbrBase " nbrToPut " " baseToPut.
+       call "myPutNbrBase" using nbrToPut baseToPut.
 
        stop run.
