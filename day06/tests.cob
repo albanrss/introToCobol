@@ -18,6 +18,7 @@
        01  strToCompN2 pic x(2) value "ab".
        01  nCmp        pic 9(9) value 2.
        01  strToUpCase pic x(20) value "Hello-la Team".
+       01  strToLowCase pic x(20) value "Hello-la Team".
 
 
        procedure division.
@@ -48,5 +49,9 @@
        display "myStrUpCase " strToUpCase.
        call "myStrUpCase" using strToUpCase.
        display strToUpCase.
+
+       display "myStrLowCase " strToLowCase.
+       call "myStrLowCase" using strToLowCase.
+       display strToLowCase.
 
        stop run.

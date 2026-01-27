@@ -6,6 +6,7 @@ SRC=(
     myStrCmp.cob
     myStrNCmp.cob
     myStrUpCase.cob
+    myStrLowCase.cob
 )
 
 MAIN=tests.cob
