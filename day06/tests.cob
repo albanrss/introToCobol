@@ -12,8 +12,11 @@
        01  strToRev pic x(5) value "Hello".
        01  haystack pic x(11) value "Hello World".
        01  needle pic x(5) value "World".
-       01  strToComp1 pic x(5) value "a".
-       01  strToComp2 pic x(5) value "a".
+       01  strToComp1 pic x(2) value "ab".
+       01  strToComp2 pic x(1) value "a".
+       01  strToCompN1 pic x(1) value "a".
+       01  strToCompN2 pic x(2) value "ab".
+       01  nCmp pic 9(9) value 2.
 
 
        procedure division.
@@ -35,6 +38,10 @@
 
        display "myStrCmp " strToComp1 " " strToComp2.
        call "myStrCmp" using strToComp1 strToComp2.
+       display return-code.
+
+       display "myStrNCmp " strToCompN1 " " strToCompN2 " " nCmp.
+       call "myStrNCmp" using strToCompN1 strToCompN2 nCmp.
        display return-code.
 
        stop run.
