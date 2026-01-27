@@ -10,6 +10,8 @@ SRC=(
     myStrCapitalize.cob
     myStrIsAlpha.cob
     myStrIsNum.cob
+    myStrIsLower.cob
+    myStrIsUpper.cob
 )
 
 MAIN=tests.cob
