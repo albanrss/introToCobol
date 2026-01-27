@@ -22,6 +22,7 @@
        01  strToCapitalize pic x(50) value
            "hey, how are you? 42WORds forty-two; fifty+one".
        01  isStrAlpha      pic x(50) value "yo-la team".
+       01  isStrNum        pic x(2) value "09".
 
 
        procedure division.
@@ -63,6 +64,10 @@
 
        display "myStrIsAlpha " isStrAlpha.
        call "myStrIsAlpha" using isStrAlpha.
+       display return-code.
+
+       display "myStrIsNum " isStrNum.
+       call "myStrIsNum" using isStrNum.
        display return-code.
 
        stop run.
