@@ -28,8 +28,8 @@
        01  isStrPrintable      pic x(1) value X'20'.
        01  nbrToPut            pic 9(9) value 0.
        01  baseToPut           pic x(16) value "0123456789ABCDEF".
-       01  nbrToGet            pic x(5) value "-0000".
-       01  baseToGet           pic x(16) value "0123456789ABCDEF".
+       01  nbrToGet            pic x(5) value "-1101".
+       01  baseToGet           pic x(2) value "01".
 
 
        procedure division.
