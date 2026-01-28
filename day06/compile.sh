@@ -14,6 +14,7 @@ SRC=(
     myStrIsUpper.cob
     myStrIsPrintable.cob
     myPutNbrBase.cob
+    myGetNbrBase.cob
 )
 
 MAIN=tests.cob
