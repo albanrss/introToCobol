@@ -16,6 +16,7 @@ SRC=(
     myPutNbrBase.cob
     myGetNbrBase.cob
     myShowStr.cob
+    myShowMem.cob
 )
 
 MAIN=tests.cob

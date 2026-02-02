@@ -31,6 +31,11 @@
        01  nbrToGet            pic x(5) value "-1101".
        01  baseToGet           pic x(2) value "01".
        01  strToShow           pic x(5) value X"09656C6C6F".
+       01  memToShow           pic x(79) value 
+           "hey guys show mem is cool you can do some pretty neat s"
+           & "tuff" & X"000f1b7f052e00010203040506070809"
+           & X"0e0f1b7f".
+       01  memLen              pic 9(9) value 79.
 
 
        procedure division.
@@ -99,5 +104,8 @@
 
        display "myShowStr " strToShow.
        call "myShowStr" using strToShow.
+
+       display "myShowMem " memToShow " " memLen.
+       call "myShowMem" using memToShow memLen.
 
        stop run.
