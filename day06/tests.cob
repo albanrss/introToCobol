@@ -30,6 +30,7 @@
        01  baseToPut           pic x(16) value "0123456789ABCDEF".
        01  nbrToGet            pic x(5) value "-1101".
        01  baseToGet           pic x(2) value "01".
+       01  strToShow           pic x(5) value X"09656C6C6F".
 
 
        procedure division.
@@ -95,5 +96,8 @@
        display "myGetNbrBase " nbrToGet " " baseToGet.
        call "myGetNbrBase" using nbrToGet baseToGet.
        display return-code.
+
+       display "myShowStr " strToShow.
+       call "myShowStr" using strToShow.
 
        stop run.
