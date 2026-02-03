@@ -1,5 +1,6 @@
 SRC=(
     myStrCat.cob
+    myStrNCat.cob
 )
 
 MAIN=tests.cob
