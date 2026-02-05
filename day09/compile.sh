@@ -1,4 +1,5 @@
 SRC=(
+    getColor.cob
 )
 
 MAIN=tests.cob
