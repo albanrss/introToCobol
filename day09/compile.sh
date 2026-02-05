@@ -1,5 +1,6 @@
 SRC=(
     getColor.cob
+    swapEndianColor.cob
 )
 
 MAIN=tests.cob

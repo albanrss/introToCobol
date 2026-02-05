@@ -18,5 +18,8 @@
        call "getColor" using red green blue colorResult.
        display colorResult.
 
+       display "swapEndianColor " colorResult.
+       call "swapEndianColor" using colorResult.
+       display colorResult.
 
        stop run.
